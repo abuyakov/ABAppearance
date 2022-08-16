@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		433BB7D128AA8AEE00472383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7D028AA8AEE00472383 /* AppDelegate.swift */; };
 		433BB7D328AA8AEE00472383 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7D228AA8AEE00472383 /* SceneDelegate.swift */; };
-		433BB7D528AA8AEE00472383 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7D428AA8AEE00472383 /* ViewController.swift */; };
 		433BB7D828AA8AEE00472383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433BB7D628AA8AEE00472383 /* Main.storyboard */; };
 		433BB7DA28AA8AF000472383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433BB7D928AA8AF000472383 /* Assets.xcassets */; };
 		433BB7DD28AA8AF000472383 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433BB7DB28AA8AF000472383 /* LaunchScreen.storyboard */; };
+		433BB7E728AA8B3A00472383 /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7E628AA8B3A00472383 /* AppearanceController.swift */; };
+		433BB7EA28AA8E5A00472383 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7E928AA8E5A00472383 /* Theme.swift */; };
+		433BB7EC28AA8E5E00472383 /* ThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7EB28AA8E5E00472383 /* ThemeService.swift */; };
+		433BB81828AAFE6200472383 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB81728AAFE6200472383 /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		433BB7CD28AA8AEE00472383 /* test_appearance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_appearance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		433BB7D028AA8AEE00472383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		433BB7D228AA8AEE00472383 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		433BB7D428AA8AEE00472383 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		433BB7D728AA8AEE00472383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		433BB7D928AA8AF000472383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		433BB7DC28AA8AF000472383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		433BB7DE28AA8AF000472383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		433BB7E628AA8B3A00472383 /* AppearanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
+		433BB7E928AA8E5A00472383 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		433BB7EB28AA8E5E00472383 /* ThemeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeService.swift; sourceTree = "<group>"; };
+		433BB81728AAFE6200472383 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		433BB7CF28AA8AEE00472383 /* test_appearance */ = {
 			isa = PBXGroup;
 			children = (
-				433BB7D028AA8AEE00472383 /* AppDelegate.swift */,
-				433BB7D228AA8AEE00472383 /* SceneDelegate.swift */,
-				433BB7D428AA8AEE00472383 /* ViewController.swift */,
-				433BB7D628AA8AEE00472383 /* Main.storyboard */,
-				433BB7D928AA8AF000472383 /* Assets.xcassets */,
-				433BB7DB28AA8AF000472383 /* LaunchScreen.storyboard */,
+				433BB7E528AA8B0400472383 /* Application */,
+				433BB7E428AA8AFD00472383 /* View */,
+				433BB7E828AA8D8B00472383 /* Resources */,
 				433BB7DE28AA8AF000472383 /* Info.plist */,
 			);
 			path = test_appearance;
+			sourceTree = "<group>";
+		};
+		433BB7E428AA8AFD00472383 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				433BB7D628AA8AEE00472383 /* Main.storyboard */,
+				433BB81728AAFE6200472383 /* HomeController.swift */,
+				433BB7E628AA8B3A00472383 /* AppearanceController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		433BB7E528AA8B0400472383 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				433BB7D028AA8AEE00472383 /* AppDelegate.swift */,
+				433BB7D228AA8AEE00472383 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		433BB7E828AA8D8B00472383 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				433BB7E928AA8E5A00472383 /* Theme.swift */,
+				433BB7EB28AA8E5E00472383 /* ThemeService.swift */,
+				433BB7D928AA8AF000472383 /* Assets.xcassets */,
+				433BB7DB28AA8AF000472383 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				433BB7D528AA8AEE00472383 /* ViewController.swift in Sources */,
 				433BB7D128AA8AEE00472383 /* AppDelegate.swift in Sources */,
+				433BB81828AAFE6200472383 /* HomeController.swift in Sources */,
+				433BB7EA28AA8E5A00472383 /* Theme.swift in Sources */,
+				433BB7EC28AA8E5E00472383 /* ThemeService.swift in Sources */,
+				433BB7E728AA8B3A00472383 /* AppearanceController.swift in Sources */,
 				433BB7D328AA8AEE00472383 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
