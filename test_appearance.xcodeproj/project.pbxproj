@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4333EC7528AC3CD4001BCB88 /* ColorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333EC7428AC3CD4001BCB88 /* ColorService.swift */; };
+		4333EC7728AC3CE0001BCB88 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333EC7628AC3CE0001BCB88 /* Color.swift */; };
+		4333EC7928AC3D28001BCB88 /* DefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333EC7828AC3D28001BCB88 /* DefaultKeys.swift */; };
 		433BB7D128AA8AEE00472383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7D028AA8AEE00472383 /* AppDelegate.swift */; };
 		433BB7D328AA8AEE00472383 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7D228AA8AEE00472383 /* SceneDelegate.swift */; };
 		433BB7D828AA8AEE00472383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433BB7D628AA8AEE00472383 /* Main.storyboard */; };
 		433BB7DA28AA8AF000472383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433BB7D928AA8AF000472383 /* Assets.xcassets */; };
 		433BB7DD28AA8AF000472383 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433BB7DB28AA8AF000472383 /* LaunchScreen.storyboard */; };
-		433BB7E728AA8B3A00472383 /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7E628AA8B3A00472383 /* AppearanceController.swift */; };
+		433BB7E728AA8B3A00472383 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7E628AA8B3A00472383 /* SettingsController.swift */; };
 		433BB7EA28AA8E5A00472383 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7E928AA8E5A00472383 /* Theme.swift */; };
 		433BB7EC28AA8E5E00472383 /* ThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7EB28AA8E5E00472383 /* ThemeService.swift */; };
 		433BB81828AAFE6200472383 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB81728AAFE6200472383 /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4333EC7428AC3CD4001BCB88 /* ColorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorService.swift; sourceTree = "<group>"; };
+		4333EC7628AC3CE0001BCB88 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4333EC7828AC3D28001BCB88 /* DefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKeys.swift; sourceTree = "<group>"; };
 		433BB7CD28AA8AEE00472383 /* test_appearance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_appearance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		433BB7D028AA8AEE00472383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		433BB7D228AA8AEE00472383 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,7 +32,7 @@
 		433BB7D928AA8AF000472383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		433BB7DC28AA8AF000472383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		433BB7DE28AA8AF000472383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		433BB7E628AA8B3A00472383 /* AppearanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
+		433BB7E628AA8B3A00472383 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		433BB7E928AA8E5A00472383 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		433BB7EB28AA8E5E00472383 /* ThemeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeService.swift; sourceTree = "<group>"; };
 		433BB81728AAFE6200472383 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 			children = (
 				433BB7E528AA8B0400472383 /* Application */,
 				433BB7E428AA8AFD00472383 /* View */,
+				4369CABA28ACFEE200CFEE54 /* Services */,
 				433BB7E828AA8D8B00472383 /* Resources */,
 				433BB7DE28AA8AF000472383 /* Info.plist */,
 			);
@@ -75,7 +82,7 @@
 			children = (
 				433BB7D628AA8AEE00472383 /* Main.storyboard */,
 				433BB81728AAFE6200472383 /* HomeController.swift */,
-				433BB7E628AA8B3A00472383 /* AppearanceController.swift */,
+				433BB7E628AA8B3A00472383 /* SettingsController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -92,12 +99,38 @@
 		433BB7E828AA8D8B00472383 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				433BB7E928AA8E5A00472383 /* Theme.swift */,
-				433BB7EB28AA8E5E00472383 /* ThemeService.swift */,
+				4333EC7828AC3D28001BCB88 /* DefaultKeys.swift */,
 				433BB7D928AA8AF000472383 /* Assets.xcassets */,
 				433BB7DB28AA8AF000472383 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4369CABA28ACFEE200CFEE54 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4369CABB28ACFEF200CFEE54 /* Theme */,
+				4369CABC28ACFEFB00CFEE54 /* Color */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4369CABB28ACFEF200CFEE54 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				433BB7E928AA8E5A00472383 /* Theme.swift */,
+				433BB7EB28AA8E5E00472383 /* ThemeService.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		4369CABC28ACFEFB00CFEE54 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				4333EC7628AC3CE0001BCB88 /* Color.swift */,
+				4333EC7428AC3CD4001BCB88 /* ColorService.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +208,11 @@
 				433BB81828AAFE6200472383 /* HomeController.swift in Sources */,
 				433BB7EA28AA8E5A00472383 /* Theme.swift in Sources */,
 				433BB7EC28AA8E5E00472383 /* ThemeService.swift in Sources */,
-				433BB7E728AA8B3A00472383 /* AppearanceController.swift in Sources */,
+				433BB7E728AA8B3A00472383 /* SettingsController.swift in Sources */,
+				4333EC7928AC3D28001BCB88 /* DefaultKeys.swift in Sources */,
+				4333EC7728AC3CE0001BCB88 /* Color.swift in Sources */,
 				433BB7D328AA8AEE00472383 /* SceneDelegate.swift in Sources */,
+				4333EC7528AC3CD4001BCB88 /* ColorService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +362,7 @@
 				DEVELOPMENT_TEAM = W3BJF5C568;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = test_appearance/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Appearane Style";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -340,7 +377,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -354,6 +391,7 @@
 				DEVELOPMENT_TEAM = W3BJF5C568;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = test_appearance/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Appearane Style";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -368,7 +406,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

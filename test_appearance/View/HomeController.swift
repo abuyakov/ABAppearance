@@ -4,29 +4,36 @@ class HomeController: UITableViewController {
     
     static let identifier = "HomeController"
 
-    @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var appearanceLabel: UILabel!
+    @IBOutlet weak var colorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Colors"
+        self.title = "Window"
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Appearance",
                                                                  image: UIImage(systemName: "gear"),
                                                                  primaryAction: UIAction(handler: { _ in
             self.buttonTapped()
         }))
-        self.tableView.separatorStyle = .none
+        
         self.tableView.allowsSelection = false
         self.tableView.showsVerticalScrollIndicator = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        infoLabel.text = "The appearance is now \(ThemeService.shared.theme.descriptions())"
+        super.viewWillAppear(animated)
+        
+        appearanceLabel.textColor = .label
+        appearanceLabel.text = ThemeService.shared.theme.descriptions()
+        
+        colorLabel.textColor = .tintColor
+        colorLabel.text = ColorService.shared.color.descriptions()
     }
     
     func buttonTapped() {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: AppearanceController.identifier)
+        let viewController = storyboard.instantiateViewController(withIdentifier: SettingsController.identifier)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 
