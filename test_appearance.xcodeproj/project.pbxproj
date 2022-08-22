@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4333EC7528AC3CD4001BCB88 /* ColorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333EC7428AC3CD4001BCB88 /* ColorService.swift */; };
-		4333EC7728AC3CE0001BCB88 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333EC7628AC3CE0001BCB88 /* Color.swift */; };
+		4333EC7728AC3CE0001BCB88 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333EC7628AC3CE0001BCB88 /* Colors.swift */; };
 		4333EC7928AC3D28001BCB88 /* DefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333EC7828AC3D28001BCB88 /* DefaultKeys.swift */; };
 		433BB7D128AA8AEE00472383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7D028AA8AEE00472383 /* AppDelegate.swift */; };
 		433BB7D328AA8AEE00472383 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7D228AA8AEE00472383 /* SceneDelegate.swift */; };
@@ -16,14 +15,13 @@
 		433BB7DA28AA8AF000472383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433BB7D928AA8AF000472383 /* Assets.xcassets */; };
 		433BB7DD28AA8AF000472383 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433BB7DB28AA8AF000472383 /* LaunchScreen.storyboard */; };
 		433BB7E728AA8B3A00472383 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7E628AA8B3A00472383 /* SettingsController.swift */; };
-		433BB7EA28AA8E5A00472383 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7E928AA8E5A00472383 /* Theme.swift */; };
-		433BB7EC28AA8E5E00472383 /* ThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7EB28AA8E5E00472383 /* ThemeService.swift */; };
+		433BB7EA28AA8E5A00472383 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7E928AA8E5A00472383 /* Themes.swift */; };
+		433BB7EC28AA8E5E00472383 /* AppearanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7EB28AA8E5E00472383 /* AppearanceService.swift */; };
 		433BB81828AAFE6200472383 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB81728AAFE6200472383 /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4333EC7428AC3CD4001BCB88 /* ColorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorService.swift; sourceTree = "<group>"; };
-		4333EC7628AC3CE0001BCB88 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4333EC7628AC3CE0001BCB88 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		4333EC7828AC3D28001BCB88 /* DefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKeys.swift; sourceTree = "<group>"; };
 		433BB7CD28AA8AEE00472383 /* test_appearance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_appearance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		433BB7D028AA8AEE00472383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,8 +31,8 @@
 		433BB7DC28AA8AF000472383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		433BB7DE28AA8AF000472383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		433BB7E628AA8B3A00472383 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		433BB7E928AA8E5A00472383 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		433BB7EB28AA8E5E00472383 /* ThemeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeService.swift; sourceTree = "<group>"; };
+		433BB7E928AA8E5A00472383 /* Themes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
+		433BB7EB28AA8E5E00472383 /* AppearanceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceService.swift; sourceTree = "<group>"; };
 		433BB81728AAFE6200472383 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,7 +68,7 @@
 			children = (
 				433BB7E528AA8B0400472383 /* Application */,
 				433BB7E428AA8AFD00472383 /* View */,
-				4369CABA28ACFEE200CFEE54 /* Services */,
+				4369CABA28ACFEE200CFEE54 /* Service */,
 				433BB7E828AA8D8B00472383 /* Resources */,
 				433BB7DE28AA8AF000472383 /* Info.plist */,
 			);
@@ -106,31 +104,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		4369CABA28ACFEE200CFEE54 /* Services */ = {
+		4369CABA28ACFEE200CFEE54 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				4369CABB28ACFEF200CFEE54 /* Theme */,
-				4369CABC28ACFEFB00CFEE54 /* Color */,
+				433BB7E928AA8E5A00472383 /* Themes.swift */,
+				4333EC7628AC3CE0001BCB88 /* Colors.swift */,
+				433BB7EB28AA8E5E00472383 /* AppearanceService.swift */,
 			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		4369CABB28ACFEF200CFEE54 /* Theme */ = {
-			isa = PBXGroup;
-			children = (
-				433BB7E928AA8E5A00472383 /* Theme.swift */,
-				433BB7EB28AA8E5E00472383 /* ThemeService.swift */,
-			);
-			path = Theme;
-			sourceTree = "<group>";
-		};
-		4369CABC28ACFEFB00CFEE54 /* Color */ = {
-			isa = PBXGroup;
-			children = (
-				4333EC7628AC3CE0001BCB88 /* Color.swift */,
-				4333EC7428AC3CD4001BCB88 /* ColorService.swift */,
-			);
-			path = Color;
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,13 +187,12 @@
 			files = (
 				433BB7D128AA8AEE00472383 /* AppDelegate.swift in Sources */,
 				433BB81828AAFE6200472383 /* HomeController.swift in Sources */,
-				433BB7EA28AA8E5A00472383 /* Theme.swift in Sources */,
-				433BB7EC28AA8E5E00472383 /* ThemeService.swift in Sources */,
+				433BB7EA28AA8E5A00472383 /* Themes.swift in Sources */,
+				433BB7EC28AA8E5E00472383 /* AppearanceService.swift in Sources */,
 				433BB7E728AA8B3A00472383 /* SettingsController.swift in Sources */,
 				4333EC7928AC3D28001BCB88 /* DefaultKeys.swift in Sources */,
-				4333EC7728AC3CE0001BCB88 /* Color.swift in Sources */,
+				4333EC7728AC3CE0001BCB88 /* Colors.swift in Sources */,
 				433BB7D328AA8AEE00472383 /* SceneDelegate.swift in Sources */,
-				4333EC7528AC3CD4001BCB88 /* ColorService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

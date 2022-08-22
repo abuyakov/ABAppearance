@@ -20,13 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
     func checkDefaultsValues() {
-        let ud = UserDefaults.standard
+        let defaults = UserDefaults.standard
         
-        if ud.object(forKey: DefaultKeys.switchState) == nil {
-            ud.set(true, forKey: DefaultKeys.switchState)
+        if defaults.object(forKey: DefaultKeys.switchState) == nil {
+            defaults.set(true, forKey: DefaultKeys.switchState)
         }
-        if ud.object(forKey: DefaultKeys.selectedColor) == nil {
-            ud.set(5, forKey: DefaultKeys.selectedColor)
+        if defaults.object(forKey: DefaultKeys.selectedColor) == nil {
+            defaults.set(5, forKey: DefaultKeys.selectedColor)
         }
     }
     

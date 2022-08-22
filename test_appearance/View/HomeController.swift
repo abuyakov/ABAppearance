@@ -11,8 +11,7 @@ class HomeController: UITableViewController {
         super.viewDidLoad()
         self.title = "Window"
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Appearance",
-                                                                 image: UIImage(systemName: "gear"),
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "gear"),
                                                                  primaryAction: UIAction(handler: { _ in
             self.buttonTapped()
         }))
@@ -25,10 +24,10 @@ class HomeController: UITableViewController {
         super.viewWillAppear(animated)
         
         appearanceLabel.textColor = .label
-        appearanceLabel.text = ThemeService.shared.theme.descriptions()
+        appearanceLabel.text = AppearanceService.shared.theme.descriptions()
         
         colorLabel.textColor = .tintColor
-        colorLabel.text = ColorService.shared.color.descriptions()
+        colorLabel.text = AppearanceService.shared.color.descriptions()
     }
     
     func buttonTapped() {

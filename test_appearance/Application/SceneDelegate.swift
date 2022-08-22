@@ -11,8 +11,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = UIWindow(windowScene: sceneWindow)
         self.window?.rootViewController = UINavigationController(rootViewController: viewController)
         self.window?.makeKeyAndVisible()
-        self.window?.overrideUserInterfaceStyle = ThemeService.shared.theme.getUserInterfaceStyle()
-        self.window?.tintColor = ColorService.shared.color.getColorStyle()
+        self.window?.overrideUserInterfaceStyle = AppearanceService.shared.theme.getUserInterfaceStyle()
+        self.window?.tintColor = AppearanceService.shared.color.getColorStyle()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) { }

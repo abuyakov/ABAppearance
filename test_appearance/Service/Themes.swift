@@ -1,6 +1,6 @@
 import UIKit
 
-enum Theme: Int {
+enum Themes: Int {
     
     case device
     case light

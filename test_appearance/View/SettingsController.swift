@@ -11,6 +11,7 @@ class SettingsController: UITableViewController {
         self.title = "Settings"
         self.navigationItem.largeTitleDisplayMode = .never
         self.tableView.allowsMultipleSelection = false
+        UITableViewCell.appearance().selectionStyle = .none
         
         modeSwitch.isOn = UserDefaults.standard.bool(forKey: DefaultKeys.switchState)
     }
@@ -18,13 +19,13 @@ class SettingsController: UITableViewController {
     @IBAction func switchValueChanged(sender: UISwitch) {
         if modeSwitch.isOn {
             UserDefaults.standard.set(true, forKey: DefaultKeys.switchState)
-            ThemeService.shared.theme = Theme(rawValue: 0) ?? .device
-            view.window?.overrideUserInterfaceStyle = ThemeService.shared.theme.getUserInterfaceStyle()
+            AppearanceService.shared.theme = Themes(rawValue: 0) ?? .device
+            view.window?.overrideUserInterfaceStyle = AppearanceService.shared.theme.getUserInterfaceStyle()
         }
         else {
             UserDefaults.standard.set(false, forKey: DefaultKeys.switchState)
-            ThemeService.shared.theme = Theme(rawValue: 1) ?? .light
-            view.window?.overrideUserInterfaceStyle = ThemeService.shared.theme.getUserInterfaceStyle()
+            AppearanceService.shared.theme = Themes(rawValue: 1) ?? .light
+            view.window?.overrideUserInterfaceStyle = AppearanceService.shared.theme.getUserInterfaceStyle()
         }
         tableView.reloadData()
     }
@@ -34,50 +35,40 @@ class SettingsController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.section {
-        case 1:
-            if 0...1 ~= indexPath.row {
-                didSelectTheme(value: indexPath.row + 1, theme: .light, index: indexPath)
-            }
-        case 2:
-            if 0...7 ~= indexPath.row {
-                didSelectColor(value: indexPath.row, color: .blue, index: indexPath)
-            }
+        switch (indexPath.section, indexPath.row) {
+        case (1, 0...1):
+            didSelectTheme(value: indexPath.row + 1, theme: .light, index: indexPath)
+        case (2, 0...7):
+            didSelectColor(value: indexPath.row, color: .blue, index: indexPath)
         default:
             return
         }
         tableView.reloadData()
-        print("Selected: \(ThemeService.shared.theme.descriptions()) + \(ColorService.shared.color.descriptions())")
+        print("Selected: \(AppearanceService.shared.theme.descriptions()) + \(AppearanceService.shared.color.descriptions())")
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        switch indexPath.section {
-        case 1:
-            if 0...1 ~= indexPath.row {
-                willSelectedTheme(value: indexPath.row + 1, cell: cell)
-            }
-        case 2:
-            if 0...7 ~= indexPath.row {
-                willSelectedColor(value: indexPath.row, cell: cell)
-            }
+        switch (indexPath.section, indexPath.row) {
+        case (1, 0...1):
+            willSelectedTheme(value: indexPath.row + 1, cell: cell)
+        case (2, 0...7):
+            willSelectedColor(value: indexPath.row, cell: cell)
         default:
             return
         }
     }
     
     func didSelectColor(value: Int, color: Colors, index: IndexPath) {
-        ColorService.shared.color = Colors(rawValue: value) ?? color
-        view.window?.tintColor = ColorService.shared.color.getColorStyle()
+        AppearanceService.shared.color = Colors(rawValue: value) ?? color
+        view.window?.tintColor = AppearanceService.shared.color.getColorStyle()
         let cell = tableView.cellForRow(at: index)
-        cell?.selectionStyle = .none
         cell?.accessoryType = .checkmark
     }
     
-    func didSelectTheme(value: Int, theme: Theme, index: IndexPath) {
-        ThemeService.shared.theme = Theme(rawValue: value) ?? theme
-        view.window?.overrideUserInterfaceStyle = ThemeService.shared.theme.getUserInterfaceStyle()
+    func didSelectTheme(value: Int, theme: Themes, index: IndexPath) {
+        AppearanceService.shared.theme = Themes(rawValue: value) ?? theme
+        view.window?.overrideUserInterfaceStyle = AppearanceService.shared.theme.getUserInterfaceStyle()
         let cell = tableView.cellForRow(at: index)
-        cell?.selectionStyle = .none
         cell?.accessoryType = .checkmark
         
         modeSwitch.isOn = false
@@ -85,7 +76,7 @@ class SettingsController: UITableViewController {
     }
     
     func willSelectedColor(value: Int, cell: UITableViewCell) {
-        if ColorService.shared.color.rawValue == value {
+        if AppearanceService.shared.color.rawValue == value {
             cell.accessoryType = .checkmark
         } else {
             cell.accessoryType = .none
@@ -93,7 +84,7 @@ class SettingsController: UITableViewController {
     }
     
     func willSelectedTheme(value: Int, cell: UITableViewCell) {
-        if ThemeService.shared.theme.rawValue == value {
+        if AppearanceService.shared.theme.rawValue == value {
             cell.accessoryType = .checkmark
         } else {
             cell.accessoryType = .none
