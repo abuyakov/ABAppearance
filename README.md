@@ -1,4 +1,5 @@
-![Post Square@2x](https://user-images.githubusercontent.com/56303086/185668420-b549f752-190a-4b16-a502-8df4cb3d29be.png)
+![Post Square@2x1](https://user-images.githubusercontent.com/56303086/185908836-33cc8a63-49e3-417f-ae83-a8a44632e0bc.png)
+
 
 ### About
 I tried to create a project where you can globally change the appearance of the application.    
@@ -20,8 +21,8 @@ Perhaps someone was looking for such a solution.
     func scene(_ scene: UIScene, 
                willConnectTo session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions) {
-        self.window?.overrideUserInterfaceStyle = ThemeService.shared.theme.getUserInterfaceStyle()
-        self.window?.tintColor = ColorService.shared.color.getColorStyle()
+        self.window?.overrideUserInterfaceStyle = AppearanceService.shared.theme.getUserInterfaceStyle()
+        self.window?.tintColor = AppearanceService.shared.color.getColorStyle()
     }
 ```
 
