@@ -72,7 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 These are two functions for checking and setting default values in **UserDefaultsManager**.
 
 ```swift
-class UserDefaultsmanager {
+class UserDefaultsManager {
     // ... (other code)
 
     func setDefaultValuesIfNeeded() {
