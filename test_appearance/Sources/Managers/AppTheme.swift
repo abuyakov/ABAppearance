@@ -1,12 +1,12 @@
 import UIKit
 
-enum Themes: Int {
+enum AppTheme: Int {
     
     case device
     case light
     case dark
     
-    func getUserInterfaceStyle() -> UIUserInterfaceStyle {
+    var userInterfaceStyle: UIUserInterfaceStyle {
         switch self {
         case .device:
             return .unspecified
@@ -17,7 +17,7 @@ enum Themes: Int {
         }
     }
     
-    func descriptions() -> String {
+    var description: String {
         switch self {
         case .device:
             return "Automatically"

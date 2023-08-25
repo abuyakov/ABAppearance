@@ -1,55 +1,76 @@
 import UIKit
 
-enum Colors: Int {
+enum AppColor: Int {
     
     case red
-    case pink
     case orange
     case yellow
     case green
+    case mint
+    case teal
+    case cyan
     case blue
+    case indigo
     case purple
-    case gray
+    case pink
+    case brown
     
-    func getColorStyle() -> UIColor {
+    var colorStyle: UIColor {
         switch self {
         case .red:
             return .systemRed
-        case .pink:
-            return .systemPink
         case .orange:
             return .systemOrange
         case .yellow:
             return .systemYellow
         case .green:
             return .systemGreen
+        case .mint:
+            return .systemMint
+        case .teal:
+            return .systemTeal
+        case .cyan:
+            return .systemCyan
         case .blue:
             return .systemBlue
+        case .indigo:
+            return .systemIndigo
         case .purple:
             return .systemPurple
-        case .gray:
-            return .systemGray
+        case .pink:
+            return .systemPink
+        case .brown:
+            return .systemBrown
         }
     }
     
-    func descriptions() -> String {
+    var description: String {
         switch self {
         case .red:
             return "Red"
-        case .pink:
-            return "Pink"
         case .orange:
             return "Orange"
         case .yellow:
             return "Yellow"
         case .green:
             return "Green"
+        case .mint:
+            return "Mint"
+        case .teal:
+            return "Teal"
+        case .cyan:
+            return "Cyan"
         case .blue:
             return "Blue"
+        case .indigo:
+            return "Indigo"
         case .purple:
             return "Purple"
-        case .gray:
-            return "Gray"
+        case .pink:
+            return "Pink"
+        case .brown:
+            return "Brown"
         }
     }
+    
 }

@@ -7,33 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4333EC7728AC3CE0001BCB88 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333EC7628AC3CE0001BCB88 /* Colors.swift */; };
-		4333EC7928AC3D28001BCB88 /* DefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333EC7828AC3D28001BCB88 /* DefaultKeys.swift */; };
 		433BB7D128AA8AEE00472383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7D028AA8AEE00472383 /* AppDelegate.swift */; };
 		433BB7D328AA8AEE00472383 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7D228AA8AEE00472383 /* SceneDelegate.swift */; };
-		433BB7D828AA8AEE00472383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433BB7D628AA8AEE00472383 /* Main.storyboard */; };
 		433BB7DA28AA8AF000472383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433BB7D928AA8AF000472383 /* Assets.xcassets */; };
 		433BB7DD28AA8AF000472383 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433BB7DB28AA8AF000472383 /* LaunchScreen.storyboard */; };
 		433BB7E728AA8B3A00472383 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7E628AA8B3A00472383 /* SettingsController.swift */; };
-		433BB7EA28AA8E5A00472383 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7E928AA8E5A00472383 /* Themes.swift */; };
-		433BB7EC28AA8E5E00472383 /* AppearanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB7EB28AA8E5E00472383 /* AppearanceService.swift */; };
-		433BB81828AAFE6200472383 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB81728AAFE6200472383 /* HomeController.swift */; };
+		4B0DF9052A98BE1100F2957B /* ThemeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DF9042A98BE1100F2957B /* ThemeController.swift */; };
+		4B0DF9072A98BE1B00F2957B /* ColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DF9062A98BE1B00F2957B /* ColorController.swift */; };
+		4B0DF9092A98BE2300F2957B /* IconController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DF9082A98BE2300F2957B /* IconController.swift */; };
+		4B0DF90E2A98BEBD00F2957B /* alternativeIcon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B0DF90B2A98BEBD00F2957B /* alternativeIcon1.png */; };
+		4B0DF90F2A98BEBD00F2957B /* alternativeIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B0DF90C2A98BEBD00F2957B /* alternativeIcon2.png */; };
+		4B0DF9102A98BEBD00F2957B /* defaultIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B0DF90D2A98BEBD00F2957B /* defaultIcon.png */; };
+		4B0DF9132A98BEE400F2957B /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DF9122A98BEE400F2957B /* UserDefaultsManager.swift */; };
+		4B0DF9152A98BEF500F2957B /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DF9142A98BEF500F2957B /* AppTheme.swift */; };
+		4B0DF9172A98BF0500F2957B /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DF9162A98BF0500F2957B /* AppColor.swift */; };
+		4B0DF9192A98BF1400F2957B /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DF9182A98BF1400F2957B /* AppIcon.swift */; };
+		4B0DF91B2A98BFC900F2957B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DF91A2A98BFC900F2957B /* UIColorExtension.swift */; };
+		4B0DF91F2A98C01C00F2957B /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B0DF91E2A98C01C00F2957B /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4333EC7628AC3CE0001BCB88 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		4333EC7828AC3D28001BCB88 /* DefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKeys.swift; sourceTree = "<group>"; };
 		433BB7CD28AA8AEE00472383 /* test_appearance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_appearance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		433BB7D028AA8AEE00472383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		433BB7D228AA8AEE00472383 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		433BB7D728AA8AEE00472383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		433BB7D928AA8AF000472383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		433BB7DC28AA8AF000472383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		433BB7DE28AA8AF000472383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		433BB7E628AA8B3A00472383 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		433BB7E928AA8E5A00472383 /* Themes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
-		433BB7EB28AA8E5E00472383 /* AppearanceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceService.swift; sourceTree = "<group>"; };
-		433BB81728AAFE6200472383 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		4B0DF9042A98BE1100F2957B /* ThemeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeController.swift; sourceTree = "<group>"; };
+		4B0DF9062A98BE1B00F2957B /* ColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorController.swift; sourceTree = "<group>"; };
+		4B0DF9082A98BE2300F2957B /* IconController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconController.swift; sourceTree = "<group>"; };
+		4B0DF90B2A98BEBD00F2957B /* alternativeIcon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alternativeIcon1.png; sourceTree = "<group>"; };
+		4B0DF90C2A98BEBD00F2957B /* alternativeIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alternativeIcon2.png; sourceTree = "<group>"; };
+		4B0DF90D2A98BEBD00F2957B /* defaultIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultIcon.png; sourceTree = "<group>"; };
+		4B0DF9122A98BEE400F2957B /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		4B0DF9142A98BEF500F2957B /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		4B0DF9162A98BF0500F2957B /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		4B0DF9182A98BF1400F2957B /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
+		4B0DF91A2A98BFC900F2957B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		4B0DF91E2A98C01C00F2957B /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,52 +78,82 @@
 		433BB7CF28AA8AEE00472383 /* test_appearance */ = {
 			isa = PBXGroup;
 			children = (
-				433BB7E528AA8B0400472383 /* Application */,
-				433BB7E428AA8AFD00472383 /* View */,
-				4369CABA28ACFEE200CFEE54 /* Service */,
+				433BB7E528AA8B0400472383 /* App */,
+				4B0DF9032A98BDF400F2957B /* Sources */,
 				433BB7E828AA8D8B00472383 /* Resources */,
 				433BB7DE28AA8AF000472383 /* Info.plist */,
 			);
 			path = test_appearance;
 			sourceTree = "<group>";
 		};
-		433BB7E428AA8AFD00472383 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				433BB7D628AA8AEE00472383 /* Main.storyboard */,
-				433BB81728AAFE6200472383 /* HomeController.swift */,
-				433BB7E628AA8B3A00472383 /* SettingsController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		433BB7E528AA8B0400472383 /* Application */ = {
+		433BB7E528AA8B0400472383 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				433BB7D028AA8AEE00472383 /* AppDelegate.swift */,
 				433BB7D228AA8AEE00472383 /* SceneDelegate.swift */,
 			);
-			path = Application;
+			path = App;
 			sourceTree = "<group>";
 		};
 		433BB7E828AA8D8B00472383 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4333EC7828AC3D28001BCB88 /* DefaultKeys.swift */,
+				4B0DF90A2A98BEAF00F2957B /* AlternativeIcons */,
 				433BB7D928AA8AF000472383 /* Assets.xcassets */,
+				4B0DF91E2A98C01C00F2957B /* Settings.storyboard */,
 				433BB7DB28AA8AF000472383 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		4369CABA28ACFEE200CFEE54 /* Service */ = {
+		4B0DF9032A98BDF400F2957B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				433BB7E928AA8E5A00472383 /* Themes.swift */,
-				4333EC7628AC3CE0001BCB88 /* Colors.swift */,
-				433BB7EB28AA8E5E00472383 /* AppearanceService.swift */,
+				4B0DF91D2A98BFDC00F2957B /* Controllers */,
+				4B0DF9112A98BECE00F2957B /* Managers */,
+				4B0DF91C2A98BFCC00F2957B /* Extensions */,
 			);
-			path = Service;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4B0DF90A2A98BEAF00F2957B /* AlternativeIcons */ = {
+			isa = PBXGroup;
+			children = (
+				4B0DF90D2A98BEBD00F2957B /* defaultIcon.png */,
+				4B0DF90B2A98BEBD00F2957B /* alternativeIcon1.png */,
+				4B0DF90C2A98BEBD00F2957B /* alternativeIcon2.png */,
+			);
+			path = AlternativeIcons;
+			sourceTree = "<group>";
+		};
+		4B0DF9112A98BECE00F2957B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4B0DF9122A98BEE400F2957B /* UserDefaultsManager.swift */,
+				4B0DF9142A98BEF500F2957B /* AppTheme.swift */,
+				4B0DF9162A98BF0500F2957B /* AppColor.swift */,
+				4B0DF9182A98BF1400F2957B /* AppIcon.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4B0DF91C2A98BFCC00F2957B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4B0DF91A2A98BFC900F2957B /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4B0DF91D2A98BFDC00F2957B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				433BB7E628AA8B3A00472383 /* SettingsController.swift */,
+				4B0DF9042A98BE1100F2957B /* ThemeController.swift */,
+				4B0DF9062A98BE1B00F2957B /* ColorController.swift */,
+				4B0DF9082A98BE2300F2957B /* IconController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,9 +214,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B0DF90E2A98BEBD00F2957B /* alternativeIcon1.png in Resources */,
 				433BB7DD28AA8AF000472383 /* LaunchScreen.storyboard in Resources */,
 				433BB7DA28AA8AF000472383 /* Assets.xcassets in Resources */,
-				433BB7D828AA8AEE00472383 /* Main.storyboard in Resources */,
+				4B0DF91F2A98C01C00F2957B /* Settings.storyboard in Resources */,
+				4B0DF90F2A98BEBD00F2957B /* alternativeIcon2.png in Resources */,
+				4B0DF9102A98BEBD00F2957B /* defaultIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,28 +230,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B0DF9192A98BF1400F2957B /* AppIcon.swift in Sources */,
 				433BB7D128AA8AEE00472383 /* AppDelegate.swift in Sources */,
-				433BB81828AAFE6200472383 /* HomeController.swift in Sources */,
-				433BB7EA28AA8E5A00472383 /* Themes.swift in Sources */,
-				433BB7EC28AA8E5E00472383 /* AppearanceService.swift in Sources */,
+				4B0DF9092A98BE2300F2957B /* IconController.swift in Sources */,
 				433BB7E728AA8B3A00472383 /* SettingsController.swift in Sources */,
-				4333EC7928AC3D28001BCB88 /* DefaultKeys.swift in Sources */,
-				4333EC7728AC3CE0001BCB88 /* Colors.swift in Sources */,
+				4B0DF9132A98BEE400F2957B /* UserDefaultsManager.swift in Sources */,
+				4B0DF9072A98BE1B00F2957B /* ColorController.swift in Sources */,
+				4B0DF9152A98BEF500F2957B /* AppTheme.swift in Sources */,
 				433BB7D328AA8AEE00472383 /* SceneDelegate.swift in Sources */,
+				4B0DF91B2A98BFC900F2957B /* UIColorExtension.swift in Sources */,
+				4B0DF9052A98BE1100F2957B /* ThemeController.swift in Sources */,
+				4B0DF9172A98BF0500F2957B /* AppColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		433BB7D628AA8AEE00472383 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				433BB7D728AA8AEE00472383 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		433BB7DB28AA8AF000472383 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -345,9 +385,8 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Appearane Style";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,6 +394,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "abuyakov.test-appearance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -374,9 +416,8 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Appearane Style";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,6 +425,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "abuyakov.test-appearance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
