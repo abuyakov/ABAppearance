@@ -26,7 +26,7 @@ Put a ⭐️ if I helped you, and write ideas on what can be done better.
 
 In my project, I added two alternative icons and one and the same default icon to display it in the table. You should add your icons not to assets, but as a file to the project. And add them to `Info.plist` and specify the names of these icons (see screenshot).
 
-<img width="1198" alt="Screenshot 2023-08-25 at 16 09 53" src="https://github.com/abuyakov/ABAppearance/assets/56303086/a75a7953-8e4e-46be-86c6-24a6d61494d9">
+<img width="1075" alt="Screenshot 2023-08-25 at 18 06 10" src="https://github.com/abuyakov/ABAppearance/assets/56303086/55dc9731-bafc-4342-99b8-87d2eec69580">
 
 ## Important
 
