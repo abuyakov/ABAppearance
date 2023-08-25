@@ -1,4 +1,4 @@
-# ABStyler
+# ABAppearance
 
 <img width="1280" alt="Frame 1" src="https://github.com/abuyakov/ABAppearance/assets/56303086/80208a23-4410-497f-aa67-b5b064ce7cf3">
 
