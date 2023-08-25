@@ -1,4 +1,4 @@
-# ABStyler
+# ABAppearance
 
 <img width="1280" alt="Frame 1" src="https://github.com/abuyakov/ABAppearance/assets/56303086/80208a23-4410-497f-aa67-b5b064ce7cf3">
 
@@ -30,7 +30,7 @@ In my project, I added two alternative icons and one and the same default icon t
 
 ## Important
 
-In **SceneDelegate** I specify `self.window?.tintColor` and `self.window?.overrideUserInterfaceStyle` values from `UserDefaultsManager`.
+In **SceneDelegate** I specify `self.window?.tintColor` and `self.window?.overrideUserInterfaceStyle` values from **UserDefaultsManager**.
 
 ```swift
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
